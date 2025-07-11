@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .message-link {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+      margin: 20px 0;
+    }
+    .message {
+      display: none;
+      margin-top: 20px;
+      font-size: 16px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#" class="message-link" id="showMessageLink">Click here to see the message</a>
+  
+  <div class="message" id="messageContent">
+    <p>Hi Boss,</p>
+    <p>First off, a big THANK YOU for never treating me like a junior and always as your "bro" – I’ll forever miss that, especially coming from a manager. You’ve been a huge mentor, patiently answering every dumb question I threw your way, no matter how silly it was.</p>
+    <p>I’ll always be indebted to you for not just your guidance but the invaluable thought process you’ve instilled in me. Whether or not we get to work together again, whenever you think I’d fit a role (and I'm not saying this just for the sake of saying it), I’m just a call away. Just a subtle hint to keep me in mind for any junior role you can think of!</p>
+    <p>Also, I need to call you out – Shaadi me nahi aaye, yeh galat hai! 😆</p>
+    <p>One thing I never told you – MoneyBoxx lost a gem, and I’m not talking about just your skills and knowledge but everything. You’re literally a one-man army!</p>
+    <p>Wishing you the best for your next adventure – and kitna time aap kisi aur ke liye kaam karoge It’s high time you kickstart something of your own (we all suspect you've got a side hustle or two, right?- yeh raaz bhi aapke saath hi chala gaya).</p>
+    <p>Take care, and here’s hoping our paths cross again soon!</p>
+    <p>--Prashant Reddy----</p>
+
+    <p>Hey Ankur,</p>
+    <p>You’ve honestly been one of the coolest people to work with! I’m really going to miss the way you always had quick fixes for tech issues and how you introduced me to some super useful tools. More than that, you taught me how to figure things out myself instead of waiting around for help—and that’s something I’ll always carry with me.</p>
+    <p>Even though we didn’t get too much time together in person, those bowling nights, casual chats, and quick laughs between meetings were great fun and will definitely be remembered.</p>
+    <p>Wishing you all the best for whatever comes next—I'm sure you’re going to kill it! Let’s make sure we stay in touch.</p>
+    <p>--Shivang Gupta</p>
+
+    <p>Hi Ankur,</p>
+    <p>Man, it’s tough to see you go! You’ve been the chillest manager I’ve ever had, hands down. Your smart way of working made everything so smooth, even though I didn’t get to work with you as much as I’d have liked. Oh, and big thanks for hiring me, loved that interview vibe, especially since Prashant looked scary at that time, lol.</p>
+    <p>Wishing you all the best in your next adventure. You’re gonna crush it, no doubt!</p>
+    <p>--Rahul Vishwakarma</p>
+  </div>
+
+  <script>
+    document.getElementById('showMessageLink').addEventListener('click', function(event) {
+      event.preventDefault();
+      var messageContent = document.getElementById('messageContent');
+      messageContent.style.display = messageContent.style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
+
+</body>
+</html>
